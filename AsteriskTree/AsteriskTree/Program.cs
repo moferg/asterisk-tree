@@ -23,11 +23,13 @@ namespace AsteriskTree
 
             for(int row = 0; row < 5; row++)
             {
+                // Author's solution: for(int space = 0; space < 5 - row - 1; space++)
                 for(int spaces = 4; spaces > row; spaces--)
                 {
                     Console.Write(" ");
                 }
 
+                // Author's solution: for(int star = 0; star < row * 2 + 1; star++)
                 for(int stars = -row + 1; stars <= row + 1; stars++)
                 {
                     Console.Write("*");
